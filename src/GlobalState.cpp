@@ -163,6 +163,7 @@ void GlobalState::update(float ms) {
         return;
     }
 
+	//status_playing
     for (auto* obj : m_objects) obj->update();
     
     Snake* snake = (Snake*)m_objects[0];
